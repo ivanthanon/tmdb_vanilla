@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: lightgray;
+}
+
+img:hover, span:hover {
+  cursor: pointer
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: auto;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: lightgray;
+}
+
+img {
+  width: 200px;
+}
+
+main span {
+  width: 200px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.pages {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginacion > button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#genrelist {
+  display: flex;
+  gap: 1rem;
+  width: 97vw;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#genrelist > span {
+  padding: 2rem;
+  line-height: 0;
+  word-wrap: break-word;
+  background-color: black;
+  border-radius: 1rem;
+  font-weight: 100;
+  color: white;
+  font-weight: bold;
+}
+
+#genrelist::-webkit-scrollbar {
+  height: 10px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#genrelist::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
